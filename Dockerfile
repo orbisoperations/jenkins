@@ -39,7 +39,7 @@ RUN CURL_CONNECTION_TIMEOUT=30 /usr/local/bin/install-plugins.sh job-dsl:latest 
 	ssh-credentials:latest \
 	pam-auth:latest \
 	greenballs:latest ldap:latest mailer:latest antisamy-markup-formatter:latest \
-	conditional-buildstep:latest matrix-auth:latest antisamy-markup-formatter:latest s3:latest
+	conditional-buildstep:latest matrix-auth:latest s3:latest
 	
 
 USER jenkins
