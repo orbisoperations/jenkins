@@ -38,6 +38,8 @@ RUN /usr/local/bin/install-plugins.sh workflow-job:2.13 \
 	pipeline-stage-tags-metadata:latest \
 	pipeline-stage-step:latest \
 	pipeline-build-step:latest \
+	pipeline-model-definition \
+	pipeline-maven \
 	dashboard-view:latest \
 	blueocean-pipeline-editor:latest \
 	blueocean-display-url:latest \
