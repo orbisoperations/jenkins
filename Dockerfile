@@ -17,6 +17,7 @@ RUN /usr/local/bin/install-plugins.sh workflow-job:2.13 \
 	git-server:latest git:latest \
 	git-changelog:latest git-client:latest \
 	bitbucket:latest \
+	cloudbees-bitbucket-branch-source:latest \
 	stashNotifier:latest \
 	branch-api:latest \
 	python:latest \
@@ -50,6 +51,7 @@ RUN /usr/local/bin/install-plugins.sh workflow-job:2.13 \
 	clamav:latest \
 	oauth-credentials:latest \
 	jira:latest \
+	jira-steps:latest \
 	email-ext:latest \
 	fluentd:latest \
 	delivery-pipeline-plugin:latest \
@@ -72,7 +74,8 @@ RUN /usr/local/bin/install-plugins.sh workflow-job:2.13 \
 	slack:latest \
 	thinBackup:latest \
 	ansible:latest \
-	nexus-artifact-uploader:latest
+	nexus-artifact-uploader:latest \
+	gitlab-plugin:latest
 	
 
 USER jenkins
