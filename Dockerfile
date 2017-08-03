@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -qqy \
  ca-certificates \
  groovy2 \
  dos2unix \
- lxc
+ lxc 
 
 ENV CURL_CONNECTION_TIMEOUT=180
 # Pipeline plugin
@@ -64,7 +64,9 @@ RUN /usr/local/bin/install-plugins.sh workflow-job:2.13 \
 	conditional-buildstep:latest \
 	matrix-auth:latest \
 	s3:latest \
-	slack:latest
+	slack:latest \
+	thinBackup:latest \
+	ansible:latest
 	
 
 USER jenkins
