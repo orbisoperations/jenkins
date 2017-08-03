@@ -75,7 +75,8 @@ RUN /usr/local/bin/install-plugins.sh workflow-job:2.13 \
 	thinBackup:latest \
 	ansible:latest \
 	nexus-artifact-uploader:latest \
-	gitlab-plugin:latest
+	gitlab-plugin:latest \
+	sonar:latest
 	
 
 USER jenkins
