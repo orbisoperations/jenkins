@@ -66,7 +66,8 @@ RUN /usr/local/bin/install-plugins.sh workflow-job:2.13 \
 	s3:latest \
 	slack:latest \
 	thinBackup:latest \
-	ansible:latest
+	ansible:latest \
+	nexus-artifact-uploader:latest
 	
 
 USER jenkins
