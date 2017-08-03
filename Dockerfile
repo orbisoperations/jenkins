@@ -1,5 +1,5 @@
 FROM jenkins/jenkins:lts
-MAINTAINER Stephen Sullivan <sjsullivan7@gmail.com>
+MAINTAINER Stephen Sullivan <s.sullivan@orbisops.com>
 
 USER root
 RUN apt-get update && apt-get install -qqy \
@@ -13,6 +13,7 @@ ENV CURL_CONNECTION_TIMEOUT=180
 # Pipeline plugin
 RUN /usr/local/bin/install-plugins.sh workflow-job:2.13 \
 	workflow-aggregator:latest \
+	workflow-multibranch:latest \
 	git-server:latest git:latest \
 	git-changelog:latest git-client:latest \
 	bitbucket:latest \
