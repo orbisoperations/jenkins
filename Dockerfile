@@ -33,6 +33,8 @@ RUN /usr/local/bin/install-plugins.sh workflow-job:2.13 \
 	docker-custom-build-environment:latest \
 	docker-traceability:latest \
 	docker-workflow:latest \
+	docker-slaves:latest \
+	swarm:latest \
 	blueocean:latest blueocean-web:latest \
 	blueocean-git-pipeline:latest \
 	pipeline-stage-view:latest \
