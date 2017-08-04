@@ -11,7 +11,7 @@ RUN apt-get update && apt-get install -qqy \
 
 ENV CURL_CONNECTION_TIMEOUT=180
 # Pipeline plugin
-RUN /usr/local/bin/install-plugins.sh workflow-job:2.13 \
+RUN /usr/local/bin/install-plugins.sh workflow-job:latest \
 	workflow-aggregator:latest \
 	workflow-multibranch:latest \
 	git-server:latest git:latest \
