@@ -26,7 +26,15 @@ RUN /usr/local/bin/install-plugins.sh docker-build-step:latest \
 	ssh-slaves:latest \
 	ssh-agent:latest \
 	ssh-credentials:latest \
-	antisamy-markup-formatter:latest 
+	antisamy-markup-formatter:latest \
+	cloudbees-folder:latest \
+	ant:latest \
+	ws-cleanup:latest \
+	workflow-aggregator:latest \
+	pipeline-stage-view:latest \
+	conditional-buildstep:latest \
+	git:latest
+	
 	
 # The Maven plugin is being super flaky when downloading from Jenkins
 RUN /usr/local/bin/install-plugins.sh maven:latest
