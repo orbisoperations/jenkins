@@ -14,7 +14,12 @@ RUN /usr/local/bin/install-plugins.sh docker-build-step:latest \
 	docker-slaves:latest \
 	openstack-cloud:latest \
 	maven:latest \
-	job-dsl:latest
+	job-dsl:latest \
+	python:latest \
+	gradle:latest \
+	s3:latest \
+	slack:latest \
+	ansible:latest
 	
 	
 
