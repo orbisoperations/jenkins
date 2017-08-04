@@ -48,7 +48,6 @@ RUN /usr/local/bin/install-plugins.sh workflow-job:2.13 \
 	blueocean-pipeline-editor:latest \
 	blueocean-display-url:latest \
 	job-dsl:latest \
-	clamav:latest \
 	oauth-credentials:latest \
 	jira:latest \
 	jira-steps:latest \
