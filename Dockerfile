@@ -2,12 +2,7 @@ FROM jenkinsci/blueocean:latest
 MAINTAINER Stephen Sullivan <s.sullivan@orbisops.com>
 
 USER root
-RUN apt-get update && apt-get install -qqy \
- apt-utils \
- ca-certificates \
- groovy2 \
- dos2unix \
- lxc 
+
 
 ENV CURL_CONNECTION_TIMEOUT=180
 # Pipeline plugin
