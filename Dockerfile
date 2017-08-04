@@ -36,7 +36,8 @@ RUN /usr/local/bin/install-plugins.sh workflow-job:2.13 \
 	docker-workflow:latest \
 	docker-slaves:latest \
 	swarm:latest \
-	blueocean:latest blueocean-web:latest \
+	blueocean:latest \
+	blueocean-web:latest \
 	blueocean-git-pipeline:latest \
 	pipeline-stage-view:latest \
 	pipeline-stage-tags-metadata:latest \
