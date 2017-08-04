@@ -5,6 +5,9 @@ USER root
 
 
 ENV CURL_CONNECTION_TIMEOUT=360
+ENV CURL_RETRY_MAX_TIME=120
+ENV CURL_RETRY=6
+
 # Pipeline plugin
 RUN /usr/local/bin/install-plugins.sh docker-build-step:latest \
 	docker-commons:latest \
@@ -19,7 +22,13 @@ RUN /usr/local/bin/install-plugins.sh docker-build-step:latest \
 	gradle:latest \
 	s3:latest \
 	slack:latest \
-	ansible:latest
+	ansible:latest \
+	ssh-slaves:latest \
+	ssh-agent:latest \
+	ssh-credentials:latest
+	
+# The Maven plugin is being super flaky when downloading from Jenkins
+RUN /usr/local/bin/install-plugins.sh maven:latest
 	
 	
 
