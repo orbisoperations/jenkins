@@ -1,4 +1,4 @@
-FROM jenkins/jenkins:lts
+FROM jenkinsci/blueocean:latest
 MAINTAINER Stephen Sullivan <s.sullivan@orbisops.com>
 
 USER root
@@ -36,9 +36,6 @@ RUN /usr/local/bin/install-plugins.sh workflow-job:latest \
 	docker-workflow:latest \
 	docker-slaves:latest \
 	swarm:latest \
-	blueocean:latest \
-	blueocean-web:latest \
-	blueocean-git-pipeline:latest \
 	pipeline-stage-view:latest \
 	pipeline-stage-tags-metadata:latest \
 	pipeline-stage-step:latest \
@@ -46,8 +43,6 @@ RUN /usr/local/bin/install-plugins.sh workflow-job:latest \
 	pipeline-model-definition \
 	pipeline-maven \
 	dashboard-view:latest \
-	blueocean-pipeline-editor:latest \
-	blueocean-display-url:latest \
 	job-dsl:latest \
 	oauth-credentials:latest \
 	jira:latest \
