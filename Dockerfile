@@ -25,7 +25,8 @@ RUN /usr/local/bin/install-plugins.sh docker-build-step:latest \
 	ansible:latest \
 	ssh-slaves:latest \
 	ssh-agent:latest \
-	ssh-credentials:latest
+	ssh-credentials:latest \
+	antisamy-markup-formatter:latest 
 	
 # The Maven plugin is being super flaky when downloading from Jenkins
 RUN /usr/local/bin/install-plugins.sh maven:latest
