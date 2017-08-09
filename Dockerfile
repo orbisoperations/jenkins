@@ -35,7 +35,8 @@ RUN /usr/local/bin/install-plugins.sh docker-build-step:latest \
 	conditional-buildstep:latest \
 	git:latest \
 	matrix-auth:latest pam-auth:latest ldap:latest \
-	email-ext:latest mailer:latest
+	email-ext:latest mailer:latest \
+	bitbucket:latest
 	
 	
 # The Maven plugin is being super flaky when downloading from Jenkins
