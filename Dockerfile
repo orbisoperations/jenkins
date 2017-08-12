@@ -37,15 +37,18 @@ RUN /usr/local/bin/install-plugins.sh docker-build-step:latest \
 	matrix-auth:latest pam-auth:latest ldap:latest \
 	email-ext:latest mailer:latest \
 	cloudbees-bitbucket-branch-source:latest \
-	sonar:latest	
+	sonar:latest
 	
 	
 # The Maven plugin is being super flaky when downloading from Jenkins
 RUN /usr/local/bin/install-plugins.sh maven:latest
 
-# Some of the AWS plugins are bing super flaky when download from Jenkins .. try one more time
+# Some of the AWS plugins are bing super flaky when downloading from Jenkins .. try one more time
 RUN /usr/local/bin/install-plugins.sh s3:latest aws-java-sdk:latest
 
+RUN /usr/local/bin/install-plugins.sh ws-cleanup:latest build-timeout:latest timestamper:latest
+
+RUN /usr/local/bin/install-plugins.sh credentials-binding:latest
 	
 	
 
