@@ -42,6 +42,10 @@ RUN /usr/local/bin/install-plugins.sh docker-build-step:latest \
 	
 # The Maven plugin is being super flaky when downloading from Jenkins
 RUN /usr/local/bin/install-plugins.sh maven:latest
+
+# Some of the AWS plugins are bing super flaky when download from Jenkins .. try one more time
+RUN /usr/local/bin/install-plugins.sh s3:latest aws-java-sdk:latest
+
 	
 	
 
