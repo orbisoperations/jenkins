@@ -1,4 +1,4 @@
-FROM jenkinsci/blueocean:latest
+FROM jenkinsci/blueocean:1.1.7
 MAINTAINER Stephen Sullivan <s.sullivan@orbisops.com>
 
 USER root
