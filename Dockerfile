@@ -15,6 +15,7 @@ RUN /usr/local/bin/install-plugins.sh docker-build-step:latest \
 	docker-traceability:latest \
 	docker-workflow:latest \
 	docker-slaves:latest \
+	docker:latest \
 	openstack-cloud:latest \
 	maven:latest \
 	job-dsl:latest \
