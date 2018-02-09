@@ -1,0 +1,34 @@
+docker-build-step:latest
+docker-commons:latest
+docker-custom-build-environment:latest
+docker-traceability:latest
+docker-workflow:latest
+docker-slaves:latest
+docker:latest
+openstack-cloud:latest
+maven:latest
+job-dsl:latest
+python:latest
+gradle:latest
+s3:latest
+slack:latest
+ansible:latest
+ssh-slaves:latest
+ssh-agent:latest
+ssh-credentials:latest
+antisamy-markup-formatter:latest
+cloudbees-folder:latest
+ant:latest
+ws-cleanup:latest
+workflow-aggregator:latest
+pipeline-stage-view:latest
+conditional-buildstep:latest
+git:latest
+matrix-auth:latest pam-auth:latest ldap:latest
+email-ext:latest mailer:latest
+cloudbees-bitbucket-branch-source:latest
+sonar:latest
+aws-java-sdk:latest
+build-timeout:latest
+timestamper:latest	
+credentials-binding:latest

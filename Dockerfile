@@ -1,56 +1,11 @@
 FROM jenkinsci/blueocean:latest
 MAINTAINER Stephen Sullivan <s.sullivan@orbisops.com>
 
-USER root
-
 
 ENV CURL_CONNECTION_TIMEOUT=360
 ENV CURL_RETRY_MAX_TIME=120
 ENV CURL_RETRY=6
 
 # Pipeline plugin
-RUN /usr/local/bin/install-plugins.sh docker-build-step:latest \
-	docker-commons:latest \
-	docker-custom-build-environment:latest \
-	docker-traceability:latest \
-	docker-workflow:latest \
-	docker-slaves:latest \
-	docker:latest \
-	openstack-cloud:latest \
-	maven:latest \
-	job-dsl:latest \
-	python:latest \
-	gradle:latest \
-	s3:latest \
-	slack:latest \
-	ansible:latest \
-	ssh-slaves:latest \
-	ssh-agent:latest \
-	ssh-credentials:latest \
-	antisamy-markup-formatter:latest \
-	cloudbees-folder:latest \
-	ant:latest \
-	ws-cleanup:latest \
-	workflow-aggregator:latest \
-	pipeline-stage-view:latest \
-	conditional-buildstep:latest \
-	git:latest \
-	matrix-auth:latest pam-auth:latest ldap:latest \
-	email-ext:latest mailer:latest \
-	cloudbees-bitbucket-branch-source:latest \
-	sonar:latest
-	
-	
-# The Maven plugin is being super flaky when downloading from Jenkins
-RUN /usr/local/bin/install-plugins.sh maven:latest
-
-# Some of the AWS plugins are bing super flaky when downloading from Jenkins .. try one more time
-RUN /usr/local/bin/install-plugins.sh s3:latest aws-java-sdk:latest
-
-RUN /usr/local/bin/install-plugins.sh ws-cleanup:latest build-timeout:latest timestamper:latest
-
-RUN /usr/local/bin/install-plugins.sh credentials-binding:latest
-	
-	
-
-USER jenkins
+COPY plugins.txt /usr/share/jenkins/ref/plugins.txt
+RUN xargs /usr/local/bin/install-plugins.sh < /usr/share/jenkins/ref/plugins.txt
