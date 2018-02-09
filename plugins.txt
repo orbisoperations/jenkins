@@ -24,7 +24,9 @@ workflow-aggregator:latest
 pipeline-stage-view:latest
 conditional-buildstep:latest
 git:latest
-matrix-auth:latest pam-auth:latest ldap:latest
+matrix-auth:latest 
+pam-auth:latest 
+ldap:latest
 email-ext:latest mailer:latest
 cloudbees-bitbucket-branch-source:latest
 sonar:latest
