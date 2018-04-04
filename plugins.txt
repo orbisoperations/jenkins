@@ -38,4 +38,4 @@ multi-slave-config-plugin:latest
 nodelabelparameter:latest
 throttle-concurrents:latest
 gitlab-plugin:latest
-mattermostn:latest
+mattermost:latest
